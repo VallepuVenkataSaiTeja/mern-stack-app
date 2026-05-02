@@ -20,3 +20,9 @@ nodemon → auto-restart server during development
 - created index.js and created a server using express.js
 - created database folder and connect the MongoDB with mongoose
 - created a User model using Mongoose which defines how user data is stored inside MongoDB.
+
+- wrapped App component in BrowserRouter
+- created routes and common layout & outlet
+- <Outlet /> is the place where React Router displays the child route of a parent route.
+- created a auth page with sign in , sign up using useState()
+- installed shadcn 
