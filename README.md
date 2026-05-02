@@ -26,3 +26,4 @@ nodemon → auto-restart server during development
 - <Outlet /> is the place where React Router displays the child route of a parent route.
 - created a auth page with sign in , sign up using useState()
 - installed shadcn 
+- created common button component
