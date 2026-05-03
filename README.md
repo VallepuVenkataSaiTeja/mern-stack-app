@@ -26,3 +26,6 @@ nodemon → auto-restart server during development
 - <Outlet /> is the place where React Router displays the child route of a parent route.
 - created a auth page with sign in , sign up using useState()
 - created sign up & sign in form logic in auth page
+- in server, created controllers and routes folders
+- inside them created user-controller.js and user-router.js for user-related logic and routes
+- configured and connected the router in index.js (main server file) using app.use()
