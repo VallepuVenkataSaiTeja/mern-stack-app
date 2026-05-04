@@ -29,3 +29,5 @@ nodemon → auto-restart server during development
 - in server, created controllers and routes folders
 - inside them created user-controller.js and user-router.js for user-related logic and routes
 - configured and connected the router in index.js (main server file) using app.use()
+- in frotnend , created a service folder and in that we are fetching the register api endpoint
+- and in auth SignUp code handled for new user registration and existing user and used toast for popup toaster

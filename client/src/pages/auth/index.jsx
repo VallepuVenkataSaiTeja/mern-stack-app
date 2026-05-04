@@ -1,14 +1,31 @@
 
+import { callRegisterUserApi } from "@/services";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
+import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
 function AuthPage(){
     const [loginView, setLoginView] = useState(true);
     const { register , handleSubmit } = useForm();
+    const navigate = useNavigate();
 
-    const onSignUp = (data) => {
-        console.log('Sign Up' , data)
-    }
+        const onSignUp = async (data) => {
+            try {
+                const res = await callRegisterUserApi(data);
+
+                toast.success(res.message || "User registered");
+
+                navigate("/tasks/list");
+
+            } catch (err) {
+                console.log(err);
+
+                toast.error(
+                    err.response?.data?.message || "Something went wrong"
+                );
+            }
+        };
 
      const onSignIn = (data) => {
         console.log('Sign In' , data)

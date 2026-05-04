@@ -4,8 +4,15 @@ import './index.css'
 import App from './App.jsx'
 import { BrowserRouter } from 'react-router-dom'
 
+// ✅ add these
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
+
 createRoot(document.getElementById('root')).render(
+  <StrictMode>
     <BrowserRouter>
-       <App />
+      <App />
+      <ToastContainer />
     </BrowserRouter>
+  </StrictMode>
 )
